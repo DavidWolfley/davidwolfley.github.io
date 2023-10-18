@@ -8,16 +8,19 @@
 
  }
 
+ h1 {
+  text-align: center;
+  font-size: 72px;
+  padding: 3px;
+  padding-top: 50px !important;
+ }
+
 h2 {
   font-variant: small-caps;
   font-size: 60px;
   padding-bottom: 40px !important;
   }
 
-.main {
-  background-color: #333;
-  color: #ffffff;
-}
 
 h3{
   font-variant: small-caps;
@@ -31,15 +34,14 @@ button {
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  background-color: black;
-  color: white;
+  color: rgb(0, 0, 0);
   font-size: 24px;
   border-radius: 12px;
 }
 
 button:hover {
   background-color: white;
-  color:#333;
+  color:#0055ff;
 }
 
 .main p{
@@ -54,13 +56,8 @@ button:hover {
   width: 100%;
 }
 
-.topnav {
-    background-color: #333;
-  }
-
 .topnav a {
     float: right;
-    color: #ffffff;
     text-align: left;
     padding: 14px 16px;
     text-decoration: none;
@@ -71,6 +68,5 @@ button:hover {
     text-align: center;
     padding-top: 100px !important;
     padding: 3px;
-    background-color: #333;
-    color: white;
+    color: rgb(0, 0, 0);
   }
