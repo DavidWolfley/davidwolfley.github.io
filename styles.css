@@ -43,10 +43,12 @@ button:hover {
   color:#0055ff;
 }
 
-.main p{
+p{
+  text-align: center;
   font-size: 30px;
   padding-bottom: 50px !important;
 }
+
 
 .main img{
   display: block;
