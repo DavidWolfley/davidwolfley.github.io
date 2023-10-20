@@ -3,71 +3,63 @@
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   margin-top: 0;
   margin-bottom: 0;
-  margin-left: 0;
-  margin-right: 0;
-
- }
-
- h1 {
+  margin-left: 20;
+  margin-right: 20;
+}
+h1 {
   text-align: center;
   font-size: 72px;
   padding: 3px;
   padding-top: 50px !important;
- }
-
-h2 {
-  font-variant: small-caps;
+}
+ h2 {
   font-size: 60px;
   padding-bottom: 40px !important;
-  }
-
-  
+}  
 h3 {
   text-align: center;
-  font-variant: small-caps;
   font-size: 40px;
-  }
-
-button {
-  position: absolute;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  color: rgb(0, 0, 0);
-  font-size: 24px;
-  border-radius: 12px;
 }
-
-button:hover {
-  background-color: white;
-  color:#0055ff;
+p {
+  text-align: center;
 }
-
-p{
+.project{
   text-align: center;
   font-size: 30px;
   padding-bottom: 50px !important;
 }
-
-
 .main img{
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 100%;
 }
-
+.topnav {
+  background-color: blue;
+  padding: 14px 16px;
+  margin: 0 -1rem;
+}
 .topnav a {
-    float: right;
-    text-align: left;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 24px;
-  }
-  
- footer {
+  background-color: blue;
+  color: whitesmoke;
+  text-align: right;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 24px;
+}
+.topnav div {
+  background-color: blue;
+  padding-left: 16px;  
+}
+.mainpage div {
+  background-color: white !important;
+}
+.mainpage a:visited{
+  color: blue;
+}
+footer {
     text-align: center;
     padding-top: 100px !important;
     padding: 3px;
     color: rgb(0, 0, 0);
-  }
+}
