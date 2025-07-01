@@ -1,23 +1,127 @@
 <!DOCTYPE html>
 <html lang="en-US">
   <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>David Wolfley</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <script src="https://kit.fontawesome.com/7c5e78fda3.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css"/>
   </head>
   <body>
-    <nav>
-      <div class="topnav">
-          <a href="contact.html">Contact</a>
-          <a href="projects.html">Projects</a>
-          <a href="index.html">Home</a>
+    <header>
+      <div class="logo">
+        <img src="img/logo.png" alt="">
       </div>
-    </nav>
-   <div class="mainpage">
-     <br>
-     <h1>David Wolfley</h1>
-     <p>Alma College Class of 2024, B.A. in Computer Science</p>
-     <img class="mainpage" src=me.png alt="David Wolfley Picture"></a>
-     <br>
-   </div>
-</body>
+      <button class="nav-toggle" aria label="toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+          <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+          <li class="nav__item"><a href="#about" class="nav__link">About Me</a></li>
+          <li class="nav__item"><a href="#projects" class="nav__link">My Projects</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!--Intro-->
+    <section class="intro" id="home">
+      <h1 class="section__title section__title--intro">
+        <strong>David Wolfley</strong>
+      </h1>
+      <p class="section__subtitle section__subtitle--intro"><strong>Developer</strong></p>
+      <img src="img/mesquare.png" alt="A picture of David Wolfley" class="intro__img">
+    </section>
+
+    <!--Skills-->
+    <section class="my-skills" id="skills">
+    <h2 class="section__title section__title--skills">My Skills</h2>
+    <div class="skills">
+      <div class="skill">
+        <h3>Front End Development</h3>
+        <p>
+          HTML
+          <br>CSS
+          <br>JavaScript
+          <br>Python
+          <br>Flask  
+        </p>
+      </div> <!--skill-->
+      <div class="skill">
+        <h3>Software Engineering</h3>
+        <p>
+          Java
+          <br>Kotlin
+          <br>C++
+        </p>
+      </div> <!--skill-->
+      <div class="skill">
+        <h3>Database Management</h3>
+        <p>
+          SQL
+          <br>PostgreSQL
+          <br>JDBC
+        </p>
+      </div> <!--skill-->
+    </div> <!--skills-->
+
+    <a href="#projects" class="btn">My Projects</a>
+    </section>
+
+    <!--About Me-->
+    <section class="about-me" id="about">
+      <h2 class="section__title section__title--about">About Me</h2>
+      <p class="section__title section__subtitle--about"><strong>Computer science graduate from Alma College</strong></p>
+      <div class="about-me__body">
+      <p>When I'm not developing, I have many hobbies that I like to spend my time on.
+        I love listening to and playing music, I have played flute for 9 years and bass guitar for 4.
+        I also play video games and compete in local esports events in the Detroit region.
+      </p>
+      </div>
+      <img src="img/moroccome.png" alt="David in Morocco" class="about-me__img">
+    </section>
+
+    <!--My Projects-->
+    <section class="my-projects" id="projects">
+      <h2 class="section__title section__title--projects">My Projects</h2>
+      <p class="section__subtitle section__subtitle--projects">Coursework and side projects I have completed</p>
+      <div class="portfolio">
+        <!--Portfolio Item 01-->
+        <a href="melee.html" class="portfolio__item">
+          <img src="img/melee.png" alt="" class="portfolio__img">
+        </a>
+        <!--Portfolio Item 02-->
+        <a href="eightcap.html" class="portfolio__item">
+          <img src="img/Database.png" alt="" class="portfolio__img">
+        </a>
+        <!--Portfolio Item 03-->
+        <a href="raytracer.html" class="portfolio__item">
+          <img src="img/raytracer.jpg" alt="" class="portfolio__img">
+        </a>
+        <!--Portfolio Item 04-->
+        <a href="reaction.html" class="portfolio__item">
+          <img src="img/reaction.png" alt="" class="portfolio__img">
+        </a>
+      </div>
+    </section>
+
+    <!--Footer-->
+    <footer class="footer">
+      <a href="mailto:daviddwolfley@gmail.com" class="footer-link">daviddwolfley@gmail.com</a>
+      <ul class="social-list">
+        <li class="social-list__item">
+          <a class="social-list__link" href="https://github.com/DavidWolfley">
+            <i class="fa-brands fa-github"></i></a></li>
+        <li class="social-list__item">
+          <a class="social-list__link" href="https://www.linkedin.com/in/david-wolfley-03207624b/">
+            <i class="fa-brands fa-linkedin"></i></a></li>
+      </ul>
+    </footer>
+
+    <script src="js/index.js"></script>
+  </body>
